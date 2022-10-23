@@ -1,58 +1,29 @@
 ﻿using System.Diagnostics;
 
+
 namespace Restaurant
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static async Task Main(string[] args)
         {
-            var restaurant = new Hall();
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            var rest = new Hall();
             while (true)
             {
-                Console.WriteLine("Привет! Желаете забронировать или освободить столик?\n" +
-                                  "1 - забронировать, мы уведомим Вас по смс (асинхронно)\n" +
-                                  "2 - забронировать, подождите на линии, мы Вас оповестим (синхронно)\n" +
-                                  "3 - освободить, мы уведомим Вас по смс (асинхронно)\n" +
-                                  "4 - освободить, подождите на линии, мы Вас оповестим (синхронно)\n"
-                                  );
-
-                var choiceValid = int.TryParse(Console.ReadLine(), out var choice);
-                if (!choiceValid || (choiceValid && choice is < 1 or > 4))
-                {
-                    Console.WriteLine("Введите, пожалуйста от 1 до 4");
-                    continue;
-                }
+                await Task.Delay(10000);
+               
+                Console.WriteLine("Привет! Желаете забронировать столик?");
 
                 var stopWatch = new Stopwatch();
                 stopWatch.Start();
 
-                switch (choice)
-                {
-                    case 1:
-                        restaurant.BookFreeTableAsync(1);
-                        break;
-                    case 2:
-                        restaurant.BookFreeTable(1);
-                        break;
-                    case 3:
-                    case 4:
-                        Console.WriteLine("Укажите номер столика");
-                        int.TryParse(Console.ReadLine(), out var tableId);
-                        if (choice == 3)
-                        {
-                            restaurant.FreeTableAsync(tableId);
-                        }
-                        else
-                        {
-                            restaurant.FreeTable(tableId);
-                        }
-                        break;
-                }
+                rest.BookFreeTableAsync(1); 
 
-                Console.WriteLine("Спасибо за Ваше обращение!");
+                Console.WriteLine("Спасибо за Ваше обращение!"); 
                 stopWatch.Stop();
-                var timeSpan = stopWatch.Elapsed;
-                Console.WriteLine($"{timeSpan.Seconds:00}:{timeSpan.Milliseconds:00}");
+                var ts = stopWatch.Elapsed;
+                Console.WriteLine($"{ts.Seconds:00}:{ts.Milliseconds:00}"); 
             }
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ocu78GrDd7UFGy2YWfkllCe2LONEKNjDjlNqGuV0bbEYIJRn/N/bwyRMr0uwwdX6giC1tjBS07OCUgddeuhYag==",
+  "dgSpecHash": "8yHtU4e1noig4pejd1h7fwrUebsOWLEauby2fGzW9km6kzzoReHkyySftsaJf4J/Lha8nVhuzVe7Ez7xHI3iKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\79515\\Desktop\\MessageDrivenArchitecture\\Restaurant\\Restaurant\\Restaurant.csproj",
+  "projectFilePath": "C:\\Users\\79515\\Desktop\\MessageDrivenArchitecture\\Restaurant\\Messaging\\Messaging.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\79515\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
