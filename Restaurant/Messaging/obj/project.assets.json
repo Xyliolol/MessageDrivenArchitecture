@@ -112,9 +112,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\79515\\Desktop\\MessageDrivenArchitecture\\Restaurant\\Messaging\\Messaging.csproj",
-      "projectName": "Messaging",
-      "projectPath": "C:\\Users\\79515\\Desktop\\MessageDrivenArchitecture\\Restaurant\\Messaging\\Messaging.csproj",
+      "projectUniqueName": "C:\\Users\\79515\\Desktop\\MessageDrivenArchitecture\\Restaurant\\Messaging\\Restaurant.Messages.csproj",
+      "projectName": "Restaurant.Messages",
+      "projectPath": "C:\\Users\\79515\\Desktop\\MessageDrivenArchitecture\\Restaurant\\Messaging\\Restaurant.Messages.csproj",
       "packagesPath": "C:\\Users\\79515\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\79515\\Desktop\\MessageDrivenArchitecture\\Restaurant\\Messaging\\obj\\",
       "projectStyle": "PackageReference",
