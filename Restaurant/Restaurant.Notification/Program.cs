@@ -20,8 +20,8 @@ namespace Restaurant.Notification
                 {
                     services.AddMassTransit(x =>
                     {
-                        x.AddConsumer<NotifierTableBookedConsumer>();
-                        x.AddConsumer<KitchenReadyConsumer>();
+                        x.AddConsumer<NotifyConsumer>()
+                             .Endpoint(e => e.Temporary = true);
 
                         x.UsingRabbitMq((context, cfg) =>
                         {
@@ -38,8 +38,6 @@ namespace Restaurant.Notification
 
                             cfg.ConfigureEndpoints(context);
                         });
-
-
 
                     });
                     services.AddSingleton<Notifier>();
