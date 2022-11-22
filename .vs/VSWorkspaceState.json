@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Restaurant",
+    "\\Restaurant\\Restaurant.Kitchen"
   ],
+  "SelectedNode": "\\Restaurant\\Restaurant.Kitchen\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
