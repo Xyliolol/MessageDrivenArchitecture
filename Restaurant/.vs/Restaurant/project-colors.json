@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c6351f62-4844-42bd-a122-d56e646895be": {
+      "ProjectGuid": "c6351f62-4844-42bd-a122-d56e646895be",
+      "DisplayName": "Restaurant.Booking",
+      "ColorIndex": 0
+    },
+    "038e267a-707d-4244-bc6e-f61952da2a0e": {
+      "ProjectGuid": "038e267a-707d-4244-bc6e-f61952da2a0e",
+      "DisplayName": "Restaurant.Notification",
+      "ColorIndex": 1
+    },
+    "0f9d8dd5-7b56-461f-866a-4fb00600650e": {
+      "ProjectGuid": "0f9d8dd5-7b56-461f-866a-4fb00600650e",
+      "DisplayName": "Restaurant.Messages",
+      "ColorIndex": 2
+    },
+    "ce192436-dbdc-49d5-974c-9f15558bffeb": {
+      "ProjectGuid": "ce192436-dbdc-49d5-974c-9f15558bffeb",
+      "DisplayName": "Restaurant.Kitchen",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "d9e2e85a-159c-48c9-9fdd-2dc8bd1b9018": {
+      "ProjectGuid": "d9e2e85a-159c-48c9-9fdd-2dc8bd1b9018",
+      "DisplayName": "Restaurant.Booking",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
