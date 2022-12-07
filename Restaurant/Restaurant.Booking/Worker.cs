@@ -12,12 +12,10 @@ namespace Restaurant.Booking
     public class Worker : BackgroundService
     {
         private readonly IBus _bus;
-        private readonly Restaurant _restaurant;
-
-        public Worker(IBus bus, Restaurant restaurant)
+        
+        public Worker(IBus bus)
         {
-            _bus = bus;
-            _restaurant = restaurant;
+            _bus = bus;         
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -27,10 +25,11 @@ namespace Restaurant.Booking
             {
                 await Task.Delay(10000, stoppingToken);
                 Console.WriteLine("Привет! Желаете забронировать столик?");
-                var result = await _restaurant.BookFreeTableAsync(1);
-                //забронируем с ответом по смс
-                await _bus.Publish(new TableBooked(NewId.NextGuid(), NewId.NextGuid(), result ?? false),
-                    context => context.Durable = false, stoppingToken);
+
+                var dateTime = DateTime.Now;
+                await _bus.Publish(
+                    (IBookingRequest)new BookingRequest(NewId.NextGuid(), NewId.NextGuid(), null, dateTime),
+                    stoppingToken);
             }
         }
     }
